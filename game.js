@@ -31,7 +31,7 @@ function checkAnswer(currentLevel) {
       if (userClickedPattern.length === gamePattern.length){
         setTimeout(function () {
           nextSequence();
-        }, 1500);
+        }, 1000);
       }
     } else {
       playSound("wrong");
@@ -67,7 +67,7 @@ function animatePress(currentColor) {
 }
 
 function playSound(name) {
-  var audio = new Audio("./sounds/" + name + ".mp3");
+  var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 }
 
